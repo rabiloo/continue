@@ -109,7 +109,7 @@ export default class RerankerRetrievalPipeline extends BaseRetrievalPipeline {
     } catch (e) {
       void this.options.ide.showToast(
         "warning",
-        `Failed to rerank retrieval results\n${e}`,
+        `Failed to rerank retrieval results: ${e instanceof Error ? e.message : e}`,
       );
       return chunks.slice(-this.options.nFinal);
     }
