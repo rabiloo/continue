@@ -236,7 +236,7 @@ function ConfigPage() {
                           </div>
                         </Listbox.Button>
 
-                        <Transition
+                        {/* <Transition
                           as={Fragment}
                           show={open}
                           enter="transition ease-out duration-100"
@@ -282,7 +282,7 @@ function ConfigPage() {
                               </Listbox.Option>
                             )}
                           </Listbox.Options>
-                        </Transition>
+                        </Transition> */}
 
                         {selectedProfile && (
                           <div className="mt-3 flex w-full justify-center">

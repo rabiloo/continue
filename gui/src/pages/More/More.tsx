@@ -1,8 +1,8 @@
-import {
-  ArrowTopRightOnSquareIcon,
-  DocumentArrowUpIcon,
-  TableCellsIcon,
-} from "@heroicons/react/24/outline";
+// import {
+//   ArrowTopRightOnSquareIcon,
+//   DocumentArrowUpIcon,
+//   TableCellsIcon,
+// } from "@heroicons/react/24/outline";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import DocsIndexingStatuses from "../../components/indexing/DocsIndexingStatuses";
@@ -10,12 +10,12 @@ import PageHeader from "../../components/PageHeader";
 import { IdeMessengerContext } from "../../context/IdeMessenger";
 import { useNavigationListener } from "../../hooks/useNavigationListener";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
-import { setOnboardingCard } from "../../redux/slices/uiSlice";
-import { saveCurrentSession } from "../../redux/thunks/session";
+// import { setOnboardingCard } from "../../redux/slices/uiSlice";
+// import { saveCurrentSession } from "../../redux/thunks/session";
 import { AccountButton } from "../config/AccountButton";
 import IndexingProgress from "./IndexingProgress";
 import KeyboardShortcuts from "./KeyboardShortcuts";
-import MoreHelpRow from "./MoreHelpRow";
+// import MoreHelpRow from "./MoreHelpRow";
 
 function MorePage() {
   useNavigationListener();
@@ -61,7 +61,7 @@ function MorePage() {
           <DocsIndexingStatuses />
         </div>
 
-        <div className="py-5">
+        {/* <div className="py-5">
           <h3 className="mb-4 mt-0 text-xl">Help center</h3>
           <div className="-mx-4 flex flex-col">
             <MoreHelpRow
@@ -119,7 +119,7 @@ function MorePage() {
               }}
             />
           </div>
-        </div>
+        </div> */}
 
         <div>
           <h3 className="mx-auto mb-1 text-lg">Keyboard shortcuts</h3>

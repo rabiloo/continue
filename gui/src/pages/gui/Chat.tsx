@@ -33,10 +33,14 @@ import ThinkingBlockPeek from "../../components/mainInput/ThinkingBlockPeek";
 import { TutorialCard } from "../../components/mainInput/TutorialCard";
 import AssistantSelect from "../../components/modelSelection/platform/AssistantSelect";
 import {
-  OnboardingCard,
+  // OnboardingCard,
   useOnboardingCard,
 } from "../../components/OnboardingCard";
-import { PlatformOnboardingCard } from "../../components/OnboardingCard/platform/PlatformOnboardingCard";
+// import { PlatformOnboardingCard } from "../../components/OnboardingCard/platform/PlatformOnboardingCard";
+import {
+  default as OnboardingCard,
+  default as PlatformOnboardingCard,
+} from "../../components/Empty";
 import PageHeader from "../../components/PageHeader";
 import StepContainer from "../../components/StepContainer";
 import AcceptRejectAllButtons from "../../components/StepContainer/AcceptRejectAllButtons";

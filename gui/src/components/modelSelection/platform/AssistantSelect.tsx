@@ -7,9 +7,9 @@ import { IdeMessengerContext } from "../../../context/IdeMessenger";
 import { useAppDispatch } from "../../../redux/hooks";
 import { cycleProfile } from "../../../redux/thunks/profileAndOrg";
 import { getFontSize, isMetaEquivalentKeyPressed } from "../../../util";
-import PopoverTransition from "../../mainInput/InputToolbar/PopoverTransition";
+// import PopoverTransition from "../../mainInput/InputToolbar/PopoverTransition";
 import AssistantIcon from "./AssistantIcon";
-import { AssistantSelectOptions } from "./AssistantSelectOptions";
+// import { AssistantSelectOptions } from "./AssistantSelectOptions";
 
 function AssistantSelectButton(props: { selectedProfile: ProfileDescription }) {
   return (
@@ -83,7 +83,7 @@ export default function AssistantSelect() {
           <AssistantSelectButton selectedProfile={selectedProfile} />
         </Popover.Button>
 
-        <PopoverTransition>
+        {/* <PopoverTransition>
           <Popover.Panel className="bg-vsc-input-background absolute right-0 top-full z-[1000] mr-1 mt-1 flex min-w-[200px] max-w-[90vw] cursor-default flex-row overflow-hidden rounded-md border-2 border-zinc-600 p-0">
             <AssistantSelectOptions
               onClose={() => {
@@ -93,7 +93,7 @@ export default function AssistantSelect() {
               }}
             />
           </Popover.Panel>
-        </PopoverTransition>
+        </PopoverTransition> */}
       </div>
     </Popover>
   );
